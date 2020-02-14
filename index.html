@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap website</title>
+    <!--Bootrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!--CSS PROPIOS-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    
+    <!--BARRA DE NAVEGACION TOMADO DE BOOTSTRAP-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info-one">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--SECCION DEL HEADER-->
+    <header id="header">
+        <!--Dentro del header se agrega un contendor de bootstrap que contiene una fila-->
+        <div class="container mt-5">
+            <!--Fila de bootstrap, la cual cuenta con 12 columnas, en este caso se divide en dos partes-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header-content-left">
+                        <img src="./img/image1.png" width="100%">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="header-content-right">
+                        <h1 class="display-4">Lorem, ipsum dolor.</h1>
+                        <p class="mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam aspernatur labore, amet rerum, quas officiis natus in cum odit quam sed beatae aliquid enim quae sint dolor doloremque totam nulla.</p>
+                        <a href="#" class="btn btn-outline-secondary btn-lg mt-2 header-btn">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--SECCION DE TESTIMONIOS-->
+    <section id="testimonial">
+        <div class="container">
+            <p class="mb-2 h2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor neque dignissimos temporibus assumenda dicta quisquam tenetur nam dolorem repudiandae, blanditiis fugiat aut adipisci id ullam dolores, sunt suscipit officiis quia?</p>
+            <p class="h4">
+                -Ryan Ray
+            </p>
+        </div>
+    </section>
+
+    <!--INFO ONE-->
+    <div id="info-one">
+        <div class="container mt-5">
+            <!--LAS COLUMNAS SOLO FUCIONAN DENTRO DE UNA FILA DE BOOTSTRAP-->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="info-left">
+                        <img src="./img/image2.png">
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <div class="info-right">
+                        <h1>Lorem, ipsum dolor.</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed, animi dolorem pariatur exercitationem id! Laboriosam, aliquid soluta. Consectetur recusandae alias, asperiores numquam dolor quam! Molestias, sint iusto. Optio, debitis!</p>
+                        <a href="#info-two" class="btn btn-outline-secondary btn-lg">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--INFO TWO-->
+    <section id="info-two">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consectetur placeat quam nostrum excepturi voluptate dolor sed velit maiores. Corrupti quisquam provident fugit voluptatum tempore fuga deserunt accusantium ipsam nemo.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Lorem, ipsum dolor.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit consectetur placeat quam nostrum excepturi voluptate dolor sed velit maiores. Corrupti quisquam provident fugit voluptatum tempore fuga deserunt accusantium ipsam nemo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <form class="card my-4">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="8" cols="30" placeholder="message" class="form-control"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-secondary btn-block"> Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Bootstrap scrip-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar',{
+            duration: 2000,
+            origen: 'bottom'
+        });
+
+        sr.reveal('.header-content-left',{
+            duration: 2000,
+            origen: 'top',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-content-right',{
+            duration: 2000,
+            origen: 'right',
+            distance: '300px'
+        });
+
+        sr.reveal('.header-btn',{
+            duration: 2000,
+            origen: 'right',
+            delay: 1000
+        });
+
+        sr.reveal('.testimonial',{
+            duration: 2000,
+            origen: 'left',
+            distance: '300px',
+            viewfactor: 0.2
+        }); 
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
