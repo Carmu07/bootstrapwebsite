@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <!--CSS PROPIOS-->
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/fonts.css">
 </head>
 <body>
     
@@ -107,6 +108,13 @@
         </div>
     </section>
 
+    <div class="main">
+        <div class="slides">
+            <img src="https://drive.google.com/uc?id=1ybsntTmuEfsyshb5aaq_a5KVRk_SeMRR">
+            <img src="https://drive.google.com/uc?id=19mlqCbSNJAbPlhHPfEulO11GAtRjqNmg">
+        </div>
+    </div>
+
     <footer id="contact">
         <div class="container">
             <div class="row">
@@ -135,7 +143,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="./js/jquery.slides.js"></script>
     <script>
         window.sr = ScrollReveal();
         sr.reveal('.navbar',{
@@ -176,6 +185,28 @@
             behavior: 'smooth'
         });
     });
+});
+
+$(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: false,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
 });
     </script>
 </body>
